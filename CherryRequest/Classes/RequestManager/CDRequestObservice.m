@@ -10,9 +10,9 @@
 
 @implementation CDRequestObservice
 
-- (id) initWithSuccess:(JARequestSuccess) success
-                failed:(JARequestFailed) failed
-              complete:(JARequestComplete) complete{
+- (id) initWithSuccess:(CDRequestSuccess) success
+                failed:(CDRequestFailed) failed
+              complete:(CDRequestComplete) complete{
     self = [super init];
     if(self){
         _successHandler = success;

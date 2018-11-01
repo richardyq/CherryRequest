@@ -7,17 +7,17 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^JARequestSuccess)(id result);
-typedef void(^JARequestFailed)(NSInteger errorCode, NSString* message);
-typedef void(^JARequestComplete)(NSInteger errorCode);
+typedef void(^CDRequestSuccess)(id result);
+typedef void(^CDRequestFailed)(NSInteger errorCode, NSString* message);
+typedef void(^CDRequestComplete)(NSInteger errorCode);
 
 @interface CDRequestObservice : NSObject
 
-@property (nonatomic, strong) JARequestSuccess  successHandler;
-@property (nonatomic, strong) JARequestFailed   failedHandler;
-@property (nonatomic, strong) JARequestComplete completeHandler;
+@property (nonatomic, strong) CDRequestSuccess  successHandler;
+@property (nonatomic, strong) CDRequestFailed   failedHandler;
+@property (nonatomic, strong) CDRequestComplete completeHandler;
 
-- (id) initWithSuccess:(JARequestSuccess) success
-                failed:(JARequestFailed) failed
-              complete:(JARequestComplete) complete;
+- (id) initWithSuccess:(CDRequestSuccess) success
+                failed:(CDRequestFailed) failed
+              complete:(CDRequestComplete) complete;
 @end

@@ -5,14 +5,14 @@
 //  Created by YinQ on 2018/11/1.
 //
 
-#import "CDJsonRequst.h"
+#import "CDJsonRequest.h"
 
 #import "AFNetworking.h"
 #import "MJExtension.h"
 #import "CDRequestManager.h"
 #import "CDPostParamUtil.h"
 
-@implementation CDJsonRequst
+@implementation CDJsonRequest
 
 - (AFHTTPSessionManager *)sharedHTTPSession{
     static AFHTTPSessionManager *sessionManager = nil ;
