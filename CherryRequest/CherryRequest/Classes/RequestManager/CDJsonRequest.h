@@ -7,6 +7,6 @@
 
 #import "CDRequest.h"
 
-@interface CDJsonRequst : CDRequest
+@interface CDJsonRequest : CDRequest
 
 @end

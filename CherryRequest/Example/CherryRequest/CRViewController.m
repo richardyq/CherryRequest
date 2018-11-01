@@ -8,6 +8,8 @@
 
 #import "CRViewController.h"
 
+#import "CRUserRequestUtil.h"
+
 @interface CRViewController ()
 
 @end
@@ -18,6 +20,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [CRUserRequestUtil createLoginRequst:@"yinquan" password:@"123456" success:^(id result) {
+        NSLog(@"UserLogin request success");
+    } failed:^(NSInteger errorCode, NSString *message) {
+        NSLog(@"UserLogin request failed %ld, msg = %@", errorCode, message);
+    } complete:^(NSInteger errorCode) {
+        NSLog(@"UserLogin request complete %ld", errorCode);
+    }];
 }
 
 - (void)didReceiveMemoryWarning

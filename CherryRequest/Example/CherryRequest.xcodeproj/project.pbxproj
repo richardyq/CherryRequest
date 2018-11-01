@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		07817405CF91C9718DA0F4BA /* Pods_CherryRequest_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C89D65723B9F19296E5DAE /* Pods_CherryRequest_Tests.framework */; };
+		25D93C02218AE8A700C0020D /* CRUserLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D93C01218AE8A700C0020D /* CRUserLoginRequest.m */; };
+		25D93C05218AEB7300C0020D /* CRUserRequestUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D93C04218AEB7300C0020D /* CRUserRequestUtil.m */; };
+		25D93C08218AED8200C0020D /* UserAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D93C07218AED8200C0020D /* UserAccountModel.m */; };
 		2C72CECEE00BB3C05599832C /* Pods_CherryRequest_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172FEA486D5983F57A0CA3F7 /* Pods_CherryRequest_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -39,6 +42,12 @@
 /* Begin PBXFileReference section */
 		172FEA486D5983F57A0CA3F7 /* Pods_CherryRequest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CherryRequest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA7E9178EB19C4E17B1B3CD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		25D93C00218AE8A700C0020D /* CRUserLoginRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRUserLoginRequest.h; sourceTree = "<group>"; };
+		25D93C01218AE8A700C0020D /* CRUserLoginRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRUserLoginRequest.m; sourceTree = "<group>"; };
+		25D93C03218AEB7300C0020D /* CRUserRequestUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRUserRequestUtil.h; sourceTree = "<group>"; };
+		25D93C04218AEB7300C0020D /* CRUserRequestUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRUserRequestUtil.m; sourceTree = "<group>"; };
+		25D93C06218AED8200C0020D /* UserAccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserAccountModel.h; sourceTree = "<group>"; };
+		25D93C07218AED8200C0020D /* UserAccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserAccountModel.m; sourceTree = "<group>"; };
 		4DCFDCCAA93BE3B5F2A11757 /* Pods-CherryRequest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CherryRequest_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CherryRequest_Example/Pods-CherryRequest_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CherryRequest_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CherryRequest_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +104,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25D93BFF218AE81300C0020D /* 用户 */ = {
+			isa = PBXGroup;
+			children = (
+				25D93C00218AE8A700C0020D /* CRUserLoginRequest.h */,
+				25D93C01218AE8A700C0020D /* CRUserLoginRequest.m */,
+				25D93C03218AEB7300C0020D /* CRUserRequestUtil.h */,
+				25D93C04218AEB7300C0020D /* CRUserRequestUtil.m */,
+				25D93C06218AED8200C0020D /* UserAccountModel.h */,
+				25D93C07218AED8200C0020D /* UserAccountModel.m */,
+			);
+			path = "用户";
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +154,7 @@
 		6003F593195388D20070C39A /* Example for CherryRequest */ = {
 			isa = PBXGroup;
 			children = (
+				25D93BFF218AE81300C0020D /* 用户 */,
 				6003F59C195388D20070C39A /* CRAppDelegate.h */,
 				6003F59D195388D20070C39A /* CRAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -410,8 +433,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D93C08218AED8200C0020D /* UserAccountModel.m in Sources */,
 				6003F59E195388D20070C39A /* CRAppDelegate.m in Sources */,
+				25D93C02218AE8A700C0020D /* CRUserLoginRequest.m in Sources */,
 				6003F5A7195388D20070C39A /* CRViewController.m in Sources */,
+				25D93C05218AEB7300C0020D /* CRUserRequestUtil.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

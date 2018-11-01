@@ -10,7 +10,7 @@
 #endif
 #endif
 
-#import "CDJsonRequst.h"
+#import "CDJsonRequest.h"
 #import "CDPostParamUtil.h"
 #import "CDRequest.h"
 #import "CDRequestManager.h"
