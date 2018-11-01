@@ -1,0 +1,6 @@
+framework module CherryRequest {
+  umbrella header "CherryRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}
