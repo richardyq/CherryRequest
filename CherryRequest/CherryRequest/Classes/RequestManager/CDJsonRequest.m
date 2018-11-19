@@ -85,8 +85,8 @@
             goto END;
         }
         
-        NSNumber* retCode = [respDictionary valueForKey:@"resultCode"];
-        NSString* err_msg = [respDictionary valueForKey:@"err_msg"];
+        NSNumber* retCode = [respDictionary valueForKey:@"code"];
+        NSString* err_msg = [respDictionary valueForKey:@"message"];
         id retResult = [respDictionary valueForKey:@"result"];
         
         if(!err_msg || ![err_msg isKindOfClass:[NSString class]] || err_msg.length == 0){
