@@ -49,7 +49,7 @@ static NSString* const kRequestParamKey    = @"RequestParam";
 
 - (void) main{
     [self requestFunc];
-    [self requestComplete];
+    [self performSelectorOnMainThread:@selector(requestComplete) withObject:nil waitUntilDone:NO];
 }
 
 - (void) requestFunc{
