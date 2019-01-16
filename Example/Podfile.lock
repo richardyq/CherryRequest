@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - CherryRequest (0.1.0):
+  - CherryRequest (0.1.1):
     - AFNetworking
     - MJExtension
   - MJExtension (3.0.15)
@@ -28,7 +28,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CherryRequest: d27c086c8ea207c18dd6f38bf3913161a04de92e
+  CherryRequest: 3dbaf0f547a3ac1bb937db7f713f6dcacf86eaad
   MJExtension: 3f039575db1b135a20699ad298713b26acec1528
 
 PODFILE CHECKSUM: 164d42064af8f679f5678eafe71fa8fb7b9a4c5e

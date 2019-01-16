@@ -14,6 +14,8 @@
 
 @implementation CDJsonRequest
 
+@synthesize errorCode = _errorCode;
+
 - (AFHTTPSessionManager *)sharedHTTPSession{
     static AFHTTPSessionManager *sessionManager = nil ;
     static dispatch_once_t onceToken;
@@ -93,6 +95,7 @@
             err_msg = @"解析返回数据失败。";
         }
         if(!retCode || ![retCode isKindOfClass:[NSNumber class]] || retCode.integerValue != 0){
+            _errorCode = retCode.integerValue;
             [[CDRequestManager shareInstance] requestFailed:self errroCode:-2 errorMessage:err_msg];
             goto END;
         }
