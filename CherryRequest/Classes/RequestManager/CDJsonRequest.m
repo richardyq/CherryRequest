@@ -83,6 +83,7 @@
         if(!respDictionary || ![respDictionary isKindOfClass:[NSDictionary class]])
         {
             //解析返回数据失败
+            _errorCode = -2;
             [[CDRequestManager shareInstance] requestFailed:self errroCode:-2 errorMessage:@"解析返回数据失败。"];
             goto END;
         }
@@ -118,6 +119,7 @@ END:
 - (void) jsonPostFailed:(NSURLSessionDataTask *) task Error:(NSError*) error
 {
     NSLog(@"jsonPostFailed called.");
+    _errorCode = -2;
     [[CDRequestManager shareInstance] requestFailed:self errroCode:-1 errorMessage:@"数据请求失败。"];
     [self unlock];
 }
